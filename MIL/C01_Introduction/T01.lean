@@ -22,11 +22,11 @@ open Nat
 -- when a is false, we depends on b, so if b
 -- is false, the expression is false, else is true
 
-def or (a b : Bool) :=
+def or1 (a b : Bool) :=
   match a with
   | true  => true
   | false => b
 
-#check or
-#eval or true false
-#eval or false false
+#check or1
+#eval or1 true false
+#eval or1 false false
