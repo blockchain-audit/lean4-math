@@ -17,10 +17,13 @@ show q ∧ p from And.intro hq hp
 
 
 
-def gcd : (a : Nat) -> (b : Nat) -> (fuel : Nat) -> Option Nat
-| _, _, 0 => none -- out of fuel
+def gcd : (a : Nat) -> (b : Nat) -> (gas : Nat) -> Option Nat
+| _, _, 0 => none -- out of gas
 | a, 0, _ => some a
-| a, b, (fuel+1) => gcd b (a % b) fuel
+| a, b, (gas+1) => gcd b (a % b) gas
+
+
+#eval gcd 50 100 5
 
 /--Reynaud's first runtime bound on the number of steps in Euclid's algorithm.--/
 theorem gcd_runtime_bound_Reynaud
