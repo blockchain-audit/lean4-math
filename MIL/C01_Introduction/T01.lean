@@ -30,3 +30,18 @@ def or1 (a b : Bool) :=
 #check or1
 #eval or1 true false
 #eval or1 false false
+
+
+
+
+-- method hoare2A(x: int) returns (y: int)
+-- requires x < 18
+-- ensures 0 <= y {
+--   y := 18 - x;
+-- }
+-- translate this dafny code to lean4, incluidng the pre and pos conditions
+
+-- def hoare2A (x :  ℕ) (h : x <  18) :  ℕ :=
+--   let y :=  18 - x in
+--   have h' :  0  ≤ y, from nat.sub_le_self  18 x
+--   y
