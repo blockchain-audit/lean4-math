@@ -32,8 +32,6 @@ def or1 (a b : Bool) :=
 #eval or1 false false
 
 
-
-
 -- method hoare2A(x: int) returns (y: int)
 -- requires x < 18
 -- ensures 0 <= y {
@@ -45,3 +43,13 @@ def or1 (a b : Bool) :=
 --   let y :=  18 - x in
 --   have h' :  0  ≤ y, from nat.sub_le_self  18 x
 --   y
+
+
+def myArray : Array ℕ  := #[] -- An empty array of natural numbers
+
+def myArrayWithElements : Array ℕ  := #[1,  2,  3] -- An array with elements
+
+def sumArray (a : Array Nat) : Nat :=
+  a.foldl (λ acc n => acc + n)  0 -- Summing the elements of an array
+
+#eval sumArray myArrayWithElements -- Evaluates to  6

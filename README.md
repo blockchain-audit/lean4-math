@@ -1,5 +1,34 @@
 # Mathematics in Lean
 
+
+## Numbers
+
+
+1. **Nat: Natural Numbers**: 1, 2, 3, 4, 5, ...
+   - Example: Number of apples in a basket: 1, 2, 3, ...
+
+2. **Whole Numbers**: 0, 1, 2, 3, 4, ...
+   - Example: Counting the number of students absent in a class: 0, 1, 2, 3, ...
+   - def Whole := {n :  ℤ | n  ≥  0}
+
+3. **Integers**: ..., -3, -2, -1, 0, 1, 2, 3, ...
+   - Example: Temperatures below zero: -5°C, -10°C, -15°C, ...
+
+4. **Rational Numbers**: Fractions and decimals that can be expressed as a quotient of integers.
+   - Example: \( \frac{3}{4} \), \( -\frac{2}{5} \), \( 0.25 \)
+
+5. **Irrational Numbers**: Numbers that cannot be expressed as fractions and have non-repeating, non-terminating decimal representations.
+   - Example: \( \sqrt{2} \), \( \pi \), \( e \)
+
+6. **Real Numbers**: All rational and irrational numbers.
+   - Example: \( \frac{3}{4} \), \( -\frac{2}{5} \), \( \sqrt{2} \), \( \pi \)
+
+7. **Complex Numbers**: Numbers with a real part and an imaginary part.
+   - Example: \( 3 + 2i \), \( -1 - i \), \( 2i \)
+
+
+## Overview
+
 This tutorial depends on Lean 4, VS Code, and Mathlib.
 You can find the textbook both online and in this repository
 in

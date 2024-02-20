@@ -1,6 +1,6 @@
 
 
-
+- [vscode-plugin](https://www.youtube.com/watch?v=zyXtbb_eYbY)
 - [theorem-proving](https://leanprover.github.io/theorem_proving_in_lean4/)
 - [math-intro](https://leanprover-community.github.io/mathematics_in_lean/C01_Introduction.html)
 
